@@ -21,12 +21,12 @@ class BoilerplatePackage extends Package {
     
     public function getPackageName()
     {
-	return t('Boilerplate');
+	return t('Package Name');
     }
     
     public function getPackageDescription()
     {
-	return t('A package of code templates and examples to aid C5 package development.');
+	return t('Package description goes here.');
     }
     
     private function set_package_handle()
@@ -45,10 +45,10 @@ class BoilerplatePackage extends Package {
 	    
 	// ---------- START: BLOCKS ---------------- //
 	
-	// *// install blocks
+	/*// install blocks
 	 
 	    BlockType::installBlockTypeFromPackage('widget_display', $pkg);
-	//*/
+	*/
 	
 	// ---------- END: BLOCKS ------------------ //
 
