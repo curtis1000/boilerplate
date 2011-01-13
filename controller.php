@@ -59,13 +59,15 @@ class BoilerplatePackage extends Package {
 	    Loader::model('single_page');
 		
 	    $single_pages = array(		    
-		array('path' => 'typical', 'exclude_nav' => 0),
+		array('path' => 'typical', 'cName' => 'Typical', 'exclude_nav' => 0),
 	    );
 	    
 	    foreach ($single_pages as $single_page)
 	    {
 		$page = SinglePage::add('/' . $single_page['path'], $pkg);
+		$page->update(array('cName' => $single_page['cName']));
 		$page->setAttribute('exclude_nav', $single_page['exclude_nav']);
+		
 	    }
 	*/
 	
