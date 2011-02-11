@@ -1,0 +1,2 @@
+My Theme
+A generic theme that's part of the ImageWerks Marketing theme Boilerplate by Perry Govier
