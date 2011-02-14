@@ -14,13 +14,16 @@ defined('C5_EXECUTE') or die(_("Access Denied."));
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 	
 	<!--  -->
+	<!--[if lt IE 9 ]>
+		<script type="text/javascript" src="<?php echo $this->getThemePath() ?>/media/js/PIE.js"></script>
+	<![endif]-->
 	
 	<link rel="stylesheet" href="<?php echo $this->getThemePath() ?>/media/css/style.css?v=2"><? // implied media: all. v, for caching ?>
 	<link rel="stylesheet" href="<?php  echo $this->getStyleSheet('typography.css')?>" />
 	
 	<?php Loader::element('header_required'); ?>
 	
-	<script src="/js/modernizr-1.6.min.js"></script>
+	<script src="<?php echo $this->getThemePath() ?>/media/js/modernizr-1.6.min.js"></script>
 
 </head>
 
