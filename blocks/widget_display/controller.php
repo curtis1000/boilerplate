@@ -15,9 +15,9 @@ class WidgetDisplayBlockController extends BlockController {
     protected $btInterfaceHeight = "285";
     private $pkgHandle; // auto
 
-    public function __construct()
+    public function __construct($obj = null)
     {
-	parent::__construct();
+	parent::__construct($obj);
 	$this->set_package_handle();
     }
 
