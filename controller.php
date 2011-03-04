@@ -42,6 +42,12 @@ class BoilerplatePackage extends Package {
     public function install()
     {
 	$pkg = parent::install();
+	
+	// ---------- START: THEMES ---------------- //
+	
+	//PageTheme::add('my-theme', $pkg);
+	
+	// ---------- END: THEMES ------------------ //
 	    
 	// ---------- START: BLOCKS ---------------- //
 	
