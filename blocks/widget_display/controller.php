@@ -55,11 +55,7 @@ class WidgetDisplayBlockController extends BlockController {
 	    // links a css file from this package's /css folder into the page's header via <link> tag
 	    $this->addHeaderItem($html->css('filename.css', $this->pkgHandle));	    
 	*/
-    }
-    
-    // set view vars
-    public function view()
-    {
+
 	/*
 	    The variable, $this->stored_widget_string is a database column (see db.xml). It
 	    is affected at add/edit time, and is autoloaded as a member variable of this
@@ -68,6 +64,7 @@ class WidgetDisplayBlockController extends BlockController {
 	    $this->set('stored_widget_string', $this->stored_widget_string);
 	*/
     }
+    
     
     // called at package install time
     /*public function install()
